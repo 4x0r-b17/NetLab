@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
+    <title>NetLab | Secure Server Manager</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="icon"></div>
+            <div class="name">NetLab</div>
+            <p>secure | efficient | reliable</p>
+        </div>
+
+        <div class="login-section">
+            <h1>Login Pannel</h1>
+            <form id="login-form" method="POST" action="auth.php">
+                <input type="text" id="username" name="username" required minlength="5" maxlength="10" placeholder="Username...">
+                <input type="password" id="password" name="password" required minlength="10" ma
+                xlength="20" placeholder="Password...">
+                <button type="submit">enter</button>
+            </form>
+        </div>
+    </div>
+</body>
