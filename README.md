@@ -1,7 +1,39 @@
 # NetLab
 NetLab | Mastering Secure Server Management
 
-![network-map](https://github.com/user-attachments/assets/d2d718a0-a5a9-42da-a104-32b005f906d4)
+                        +-------------------------+
+                        |      External Network   |
+                        |    (Internet Access)    |
+                        +-----------+-------------+
+                                    |
+                                    |
+                            +-------v---------+
+                            |    Server 1     | (Web Server)
+                            |  IP: 10.0.0.2   | 
+                            |  IP: 192.168.0.2|  <- Local Network IP
+                            | Apache2, Login  |
+                            | and Dashboard   |
+                            +-------+---------+
+                                    |         
+                                    |         
+                            +-------v------------+
+                            |     UFW            | (Firewall on Server 1)
+                            |  (Restrict Access) |
+                            +-------+------------+
+                                    |
+                                    |    
+                            +-------v----------+     
+                            |    Server 2      | (DB Server)
+                            |  IP: 10.0.0.3    |  
+                            |  MySQL (Users DB)|
+                            +-------+----------+
+                                    |         
+                                    |         
+                            +-------v------------+  
+                            |     UFW            | (Firewall on Server 2)
+                            |  (Restrict Access) |
+                            +--------------------+
+
 
 This project demonstrates networking, security, and web programming skills by creating a web application that communicates between two Ubuntu servers in a VirtualBox environment. The application consists of a front-end dashboard for monitoring server health and logs, as well as a back-end database that stores user information.
 
