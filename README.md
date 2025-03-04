@@ -1,6 +1,8 @@
 # NetLab
 NetLab | Mastering Secure Server Management
 
+![network-map](https://github.com/user-attachments/assets/d2d718a0-a5a9-42da-a104-32b005f906d4)
+
 This project demonstrates networking, security, and web programming skills by creating a web application that communicates between two Ubuntu servers in a VirtualBox environment. The application consists of a front-end dashboard for monitoring server health and logs, as well as a back-end database that stores user information.
 
 ## Project Overview
